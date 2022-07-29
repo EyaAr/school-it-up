@@ -1,0 +1,82 @@
+<div class="app-main" id="main">
+    <!-- begin container-fluid -->
+    <div class="container-fluid">
+      <!-- begin row -->
+      <div class="row">
+        <div class="col-md-12 m-b-30">
+          <!-- begin page title -->
+          <div class="d-block d-sm-flex flex-nowrap align-items-center">
+            <div class="page-title mb-2 mb-sm-0">
+              <h1>Parent List</h1>
+            </div>
+            
+          </div>
+          <!-- end page title -->
+        </div>
+      </div>
+      <!-- end row -->
+  
+      <!-- begin row -->
+      <div class="row">
+        <div class="col-xxl-6 m-b-30">
+          <div class="card card-statistics h-100 mb-0">
+            <div class="card-header d-flex align-items-center justify-content-between">
+              <div class="card-heading">
+                
+              </div>
+  
+             
+  
+  
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table id="latestjobs" class="table table-borderless table-striped jobportal-table mb-0">
+                  <thead>
+                    <tr>
+                      <th>Parent ID</th>
+                      <th>firstName</th>
+                      <th>lastName</th>
+                      <th> mail</th>
+                      <th>cin</th>
+                      <th>adresse</th>
+                      <th>passe</th>
+                      <th>etat civil</th>
+                      <th>phone number</th>
+                      <th>birthday date</th>
+    
+                    </tr>
+                    </thead>
+  
+  
+                  <tbody class="text-muted">
+                    <tr *ngFor="let parent of parents ">
+                      <td>{{parent.idParent}}</td>
+                      <td>{{parent.firstName}}</td>
+                      <td>{{parent.lastName}}</td>
+                      <td>{{parent.mail}}</td>
+                      <td>{{parent.cin}}</td>
+                      <td>{{parent.adresse}}</td>
+                      <td>{{parent.passe}}</td>
+                      <td>{{parent.etatCivil}}</td>
+                      <td>{{parent.phoneNb}}</td>
+                      <td>{{parent.birthDate}}</td>
+                    </tr>
+                  
+  
+                    
+                  
+                  </tbody>
+                </table>
+                
+  
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container-fluid -->
+  </div>
