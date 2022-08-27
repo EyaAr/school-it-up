@@ -1,5 +1,6 @@
 package tn.spring.entity;
 
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Set;
@@ -19,7 +20,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 @Entity
+//public class Parent extends Account{
 public class Parent implements Serializable{
+	
 	
 	static final long serialVersionUID = 1L;
 	
@@ -41,10 +44,7 @@ public class Parent implements Serializable{
 	@OneToMany(mappedBy = "parent",cascade = CascadeType.ALL)
 	Set<ParentSpace> ParentSpaceList;
 	
-	public Parent() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	public Parent() {}
 	
 	
 	public Parent(String firstName, String lastName, String mail, String cin, String adresse, String passe,
